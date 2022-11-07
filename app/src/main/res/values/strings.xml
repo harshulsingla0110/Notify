@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Notify</string>
+    <string name="main_sub_heading"><![CDATA[Capture what\'s on your mind & get a reminder later at the right plcae and time. You can also add voice memo & other features.]]></string>
+    <string name="privacy"><![CDATA[By continuing you agree Notify Terms of Service\n and Privacy Policy]]></string>
+    <string name="privacy_signup"><![CDATA[By continuing you agree Notify Terms of Service and Privacy Policy]]></string>
+    <string name="continue_with_email">Continue with Email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="new_to_notify_register">New to Notify? Register</string>
+    <string name="enter_email">Email Id</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="already_joined">Joined us before? Login</string>
+    <string name="username">Username</string>
+    <string name="create_your_first_note">Create your first Note!</string>
+    <string name="create_note">Tap + to create a note. Take a photo, add an attachment, add voice note or type some text.</string>
+</resources>

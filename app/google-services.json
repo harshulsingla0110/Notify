@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "40022456189",
+    "project_id": "notify-3d1da",
+    "storage_bucket": "notify-3d1da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40022456189:android:a9ea556327fc05ce69be14",
+        "android_client_info": {
+          "package_name": "com.harshul.notify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40022456189-aqhimsi1gg7g72ghjeo6ssh2a79pt8pd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIfU_f_CjKQXi9xcGTo1_4x-3SnPt-tSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40022456189-aqhimsi1gg7g72ghjeo6ssh2a79pt8pd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

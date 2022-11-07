@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".NotesActivity">
+
+        <TextView
+            android:id="@+id/textViewHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/montserrat_alternates_bold"
+            android:text="Hey, Harshul!"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewSubHeading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/profile_image"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/textViewSubHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates_medium"
+            android:text="Good morning"
+            android:textColor="@color/main_color"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+            app:layout_constraintStart_toStartOf="@+id/textViewHeading"
+            app:layout_constraintTop_toBottomOf="@+id/textViewHeading" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_profile_pic_male"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="300dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image"
+            app:layout_constraintVertical_bias="0.25">
+
+            <ImageView
+                android:id="@+id/imageViewBanner"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/banner_notes" />
+
+            <TextView
+                android:id="@+id/etTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/montserrat_alternates_medium"
+                android:text="@string/create_your_first_note"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewBanner" />
+
+            <TextView
+                android:id="@+id/tvSubHead"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_alternates"
+                android:gravity="center"
+                android:text="@string/create_note"
+                android:textColor="@color/dark_grey"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etTitle" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+        <ImageButton
+            android:id="@+id/buttonNewNote"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/circle"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_add" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

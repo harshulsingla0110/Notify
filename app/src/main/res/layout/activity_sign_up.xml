@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+
+
+        <ImageView
+            android:id="@+id/ivSignUp"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_margin="32dp"
+            android:src="@drawable/signup_banner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/etTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_alternates_semibold"
+            android:text="@string/sign_up"
+            android:textColor="@color/black"
+            android:textSize="@dimen/heading"
+            app:layout_constraintStart_toStartOf="@+id/ivSignUp"
+            app:layout_constraintTop_toBottomOf="@+id/ivSignUp" />
+
+        <ImageView
+            android:id="@+id/ivName"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="@+id/etTitle"
+            app:layout_constraintTop_toBottomOf="@+id/etTitle"
+            app:srcCompat="@drawable/ic_user" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/montserrat_alternates_medium"
+            android:hint="@string/username"
+            android:inputType="textPersonName|textCapWords"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_mid_2"
+            app:layout_constraintBottom_toBottomOf="@+id/ivName"
+            app:layout_constraintEnd_toEndOf="@+id/ivSignUp"
+            app:layout_constraintStart_toEndOf="@+id/ivName"
+            app:layout_constraintTop_toTopOf="@+id/ivName" />
+
+        <ImageView
+            android:id="@+id/ivAtTheRate"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="@+id/etTitle"
+            app:layout_constraintTop_toBottomOf="@+id/ivName"
+            app:srcCompat="@drawable/ic_at_the_rate" />
+
+        <AutoCompleteTextView
+            android:id="@+id/etEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/montserrat_alternates_medium"
+            android:hint="@string/enter_email"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_mid_2"
+            app:layout_constraintBottom_toBottomOf="@+id/ivAtTheRate"
+            app:layout_constraintEnd_toEndOf="@+id/ivSignUp"
+            app:layout_constraintStart_toEndOf="@+id/ivAtTheRate"
+            app:layout_constraintTop_toTopOf="@+id/ivAtTheRate" />
+
+        <ImageView
+            android:id="@+id/ivPassword"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="@+id/ivAtTheRate"
+            app:layout_constraintTop_toBottomOf="@+id/ivAtTheRate"
+            app:srcCompat="@drawable/ic_password" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:fontFamily="@font/montserrat_alternates_medium"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/grey_mid_2"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPassword"
+            app:layout_constraintEnd_toEndOf="@+id/etEmail"
+            app:layout_constraintStart_toStartOf="@+id/etEmail"
+            app:layout_constraintTop_toTopOf="@+id/ivPassword" />
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_alternates"
+            android:text="@string/privacy_signup"
+            android:textColor="@color/dark_grey"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/etPassword"
+            app:layout_constraintStart_toStartOf="@+id/ivPassword"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+        <Button
+            android:id="@+id/buttonCreate"
+            style="@style/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            app:layout_constraintBottom_toTopOf="@+id/tvLogin"
+            app:layout_constraintEnd_toEndOf="@+id/etPassword"
+            app:layout_constraintStart_toStartOf="@+id/ivPassword"
+            app:layout_constraintTop_toBottomOf="@+id/tvForgotPassword"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:fontFamily="@font/montserrat_alternates_medium"
+            android:text="@string/already_joined"
+            android:textColor="@color/grey_mid_2"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
