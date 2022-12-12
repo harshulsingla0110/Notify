@@ -5,6 +5,8 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.UnderlineSpan;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 
 public class Utils {
 
@@ -17,5 +19,13 @@ public class Utils {
 
         return spannableString;
     }
+
+    public static SpannableString textColor(Context context, String text, int textColor, int start, int end) {
+        ForegroundColorSpan color = new ForegroundColorSpan(context.getColor(textColor));
+        SpannableString spannableString = new SpannableString(text);
+        spannableString.setSpan(color, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        return spannableString;
+    }
+
 
 }

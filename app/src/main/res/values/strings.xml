@@ -14,4 +14,7 @@
     <string name="username">Username</string>
     <string name="create_your_first_note">Create your first Note!</string>
     <string name="create_note">Tap + to create a note. Take a photo, add an attachment, add voice note or type some text.</string>
+    <string name="hello">Hi, Joe! 👋</string>
+    <string name="delete_note_sub_head">This note will permanently removed and you won\'t be able to see this again.</string>
+    <string name="delete_note_head">You\'re about to delete this note</string>
 </resources>

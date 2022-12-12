@@ -18,25 +18,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:fontFamily="@font/montserrat_alternates_bold"
-            android:text="Hey, Harshul!"
+            android:text=""
             android:textColor="@color/black"
             android:textSize="24dp"
-            app:layout_constraintBottom_toTopOf="@+id/textViewSubHeading"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_image"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/profile_image"
             app:layout_constraintVertical_chainStyle="packed" />
-
-        <TextView
-            android:id="@+id/textViewSubHeading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_alternates_medium"
-            android:text="Good morning"
-            android:textColor="@color/main_color"
-            android:textSize="12dp"
-            app:layout_constraintBottom_toBottomOf="@+id/profile_image"
-            app:layout_constraintStart_toStartOf="@+id/textViewHeading"
-            app:layout_constraintTop_toBottomOf="@+id/textViewHeading" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
@@ -52,6 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="300dp"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -106,7 +95,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+            app:layout_constraintTop_toBottomOf="@+id/profile_image"
+            tools:visibility="visible" />
 
         <ImageButton
             android:id="@+id/buttonNewNote"
@@ -119,6 +109,20 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/ic_add" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:max="3"
+            android:visibility="gone"
+            android:progress="100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

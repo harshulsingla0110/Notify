@@ -1,5 +1,6 @@
 package com.harshul.notify;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -10,6 +11,7 @@ import com.harshul.notify.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+    private final Activity mActivity = MainActivity.this;
     private ActivityMainBinding binding;
 
     @Override
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.buttonContinue.setOnClickListener(view -> {
             startActivity(new Intent(MainActivity.this, LoginActivity.class));
+            finish();
         });
 
     }
